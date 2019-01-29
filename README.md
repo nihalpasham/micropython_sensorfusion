@@ -4,18 +4,18 @@ The objective - Leverage micropython (essentially python for microcontrollers) f
 
 The idea was to assess - how easy is it to get up and running and in something beyond that of the typical embedded 'hello world' example.
 
-My set-up:
+# My set-up:
   ESP32 board running micropython
   Jupyter Notebooks for flashing, debugging your code via the repl
   IMU (mpu6050) for my gyro, accelerometer readings
   Processing IDE for visualization
   
-The Goal:
+# The Goal:
   Read raw values from the IMU's onboard (MEMS) gyroscope and accelerometer
   Do some math to convert raw readings - angular velocity and linear acceleration to actual degrees of rotation about a particular axis.
   Use the computed angles to simulate 3D rotation in the processing IDE.
 
-The problem:
+# The problem:
   Accelerometer readings are pretty noisy but average out over longer timescales
   Gyroscope readings are pretty good over short durations but tend to drift due to integration of the 'bias error' (noise in sensor readings).
 
@@ -33,7 +33,7 @@ The problem of noisy readings can be addressed with 'sensor fusion' filters whic
 
 The equations might look whacky but the theory is pretty intuitive. Here is a lovely write-up on the subject - https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
-Usage:
+# Usage:
 
 Simply clone the repository and follow these steps
   Wire up the sensors and board
