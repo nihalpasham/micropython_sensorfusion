@@ -31,7 +31,7 @@ last_read_time = 0.0
 # These are the filtered angles
 last_x_angle = 0.0          
 last_y_angle = 0.0
-last_z_angle = 0.0
+last_z_angle = 0.0  
 
 # Calibrated measurements to offset some bias or error in the readings.
 calib_x_accel = 0.0 
